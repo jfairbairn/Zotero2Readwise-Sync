@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 11 * * *" # Runs at 11:00 AM (UTC) every day (Check https://crontab.guru/)
+    - cron: "0 01,03,05,07,09,15,17 * * *" # Runs every other hour from 5pm until 9am Pacific time, skipping the graveyard watch of 3am and 5am. (Check https://crontab.guru/)
 
 jobs:
   zotero-to-readwise-automation:
